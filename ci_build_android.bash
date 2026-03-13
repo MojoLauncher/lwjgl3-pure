@@ -91,6 +91,8 @@ unzip -o libshaderc-$NDK_ABI.zip -d $LWJGL_NATIVE/shaderc
 mkdir -p bin/classes/{generator,templates/META-INF}
 touch bin/classes/{generator,templates}/touch.txt bin/classes/generator/generated-touch.txt
 
+export PATH=$PWD/fake_compiler:$PATH
+
 # Build LWJGL 3
 ant -version
 yes | ant init

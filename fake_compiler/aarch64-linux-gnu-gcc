@@ -1,0 +1,2 @@
+#!/bin/bash
+exec bash FakeCompiler.bash aarch64-linux-android21-clang $@

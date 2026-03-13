@@ -1,0 +1,2 @@
+#!/bin/bash
+exec bash FakeCompiler.bash armv7a-linux-androideabi21-clang $@
