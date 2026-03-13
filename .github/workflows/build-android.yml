@@ -23,7 +23,7 @@ jobs:
     - name: Build for Android ${{matrix.arch}}
       run: |
         sudo apt update
-        sudo apt -y install binutils-multiarch
+        sudo apt -y install binutils-multiarch binutils-aarch64-linux-gnu binutils-arm-linux-gnueabihf
         export JAVA8_HOME=$JAVA_HOME_8_${{runner.arch}}
         export LWJGL_BUILD_ARCH=${{matrix.arch}}
         bash ci_build_android.bash
